@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Explore The World</title>
+        <link rel="stylesheet" href="./travel_recommendation.css">
+    </head>
+    <body>
+        <nav> <h1>Explore The World</h1>
+            <ul>
+                <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+                <li><a href="./about_us.html" id="contact">About Us </a></li>
+                <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+                <li>
+                    <!-- <div class="searchBar"> -->
+                        <input type="text" id="search" placeholder="Enter a destination or keyword">
+                        <button id='btnSearch'>Search</button>
+                        <button id='btnClear'>Clear</button>
+                    <!-- </div> -->
+                </li>
+            </ul>
+        </nav>
+
+        <div id="container">
+            <div id="sideBar">
+            </div>
+            <div id="content">
+                <div id = "intro">
+                    <div id = "box">
+                        <h1> THE WORLD IS WAITNG FOR YOU TO EXPLORE IT </h1>
+                    </div>
+                    <div id = "box">
+                        <p>
+                            Find new destinations to explore and discover something new, you never know whats waiting for you. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="searchCondition">
+                <div id="result"></div>
+            </div>
+        </div>
+        <script src="./travel_recommendation.js"></script>
+    </body>
+</html>

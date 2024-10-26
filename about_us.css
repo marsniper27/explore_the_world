@@ -1,0 +1,160 @@
+/* Basic CSS for the navigation bar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #4f505a;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    margin: 0;
+    color: #e0e0e0;
+}
+
+nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+
+/* Basic CSS for the form elements */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+}
+
+
+#container #sideBar{
+    width:10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#container #content{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px
+}
+
+#container h1{
+    font-size: xxx-large;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+/* Basic CSS for the report section */
+h2 {
+    margin-top: 30px;
+}
+
+#intro {
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+#intro #box {
+    font-size: medium;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#intro p {
+    /* background-color: #000; */
+    font-size: medium;
+    color: #e4e4eb;
+    /* opacity: 1; */
+}
+
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+    padding: 20px;
+}
+
+#team #teamTitle{
+    width:20%;
+}
+
+#team 
+#teamMembers{
+    /* width: 70%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+#teamMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 200px;
+    margin-right: 10px;
+    padding:5px;
+}
+
+name{
+    padding-bottom: 5px;
+}
+
+description{
+    padding-bottom: 5px;
+}
+role{
+    width:80%;
+    padding:5px;
+    background: rgb(85, 115, 180);
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
