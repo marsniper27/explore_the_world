@@ -35,45 +35,52 @@ nav a {
     font-weight: bold;
 }
 
-
-/* Basic CSS for the form elements */
+html,
 body {
+    height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url("background.jpg");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    background-image: url("new-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#container #sideBar {
+    width: 10%;
     display: flex;
     flex-direction: column;
 }
 
-#container{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    align-items: center;
-}
-
-
-#container #sideBar{
-    width:10%;
+#container #content {
+    width: 50%;
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
 }
-
-#container #content{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px
-}
-
 #container h1{
     font-size: xxx-large;
 }
 
 h1 {
-    color: white;
+    /* color: white; */
     margin-bottom: 20px;
 }
 
@@ -94,19 +101,19 @@ h2 {
 #intro {
     justify-content: center;
     align-items: center;
-    color: #fff;
+    /* color: #fff; */
     font-weight: bold;
 }
 
 #intro #box {
     font-size: medium;
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
 }
 
 #intro p {
     /* background-color: #000; */
     font-size: medium;
-    color: #e4e4eb;
+    /* color: #e4e4eb; */
     /* opacity: 1; */
 }
 
@@ -114,7 +121,6 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color:#fff;
     padding: 20px;
 }
 
@@ -129,6 +135,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     margin-right: 10px;
+    color: #fff;
 }
 
 #teamMember {

@@ -1,5 +1,4 @@
 /* Basic CSS for the navigation bar */
-
 * {
     margin: 0;
     padding: 0;
@@ -36,122 +35,136 @@ nav a {
 }
 
 
-/* Basic CSS for the form elements */
+html,
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
     height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-#container{
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    flex: 1;
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
-    height: 100%;
+    /* justify-content: center; */
+    background-image: url("new-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-#container #sideBar{
-    width:10%;
+#container #sideBar {
+    width: 10%;
     display: flex;
     flex-direction: column;
 }
 
-#container #content{
-    width:50%;
+#container #content {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
 }
 
 h1 {
+
     margin-bottom: 20px;
+
 }
+
+
 
 div {
+
     margin-bottom: 10px;
+
 }
+
+
 
 label {
+
     display: inline-block;
+
     width: 100px;
+
 }
+
+
 
 input[type="text"],
+
 input[type="number"],
+
 select {
+
     width: 200px;
+
     padding: 5px;
+
 }
+
+
 
 button {
+
     padding: 7px 15px;
+
     background-color: #4CAF50;
+
     color: white;
+
     border: none;
+
     cursor: pointer;
+
 }
+
+
 
 button:hover {
+
     background-color: #45a049;
+
 }
 
-/* Basic CSS for the report section */
-h2 {
-    margin-top: 30px;
-}
-
-#intro {
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-weight: bold;
-}
-
-#intro #box {
-    font-size: medium;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-#intro p {
-    /* background-color: #000; */
-    font-size: medium;
-    color: #e4e4eb;
-    /* opacity: 1; */
-}
-
-#intro h1 {
-    font-size: x-large;
-    color: #e4e4eb;
-    /* opacity: 1; */
-}
 
 #result .location {
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    height: 400px;
-    width: 500px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     word-wrap: break-word;
     border-radius: 5px;
+    margin: 20px 0;
 }
 
 .location img {
-    width: 400px;
-    height: 200px;
-}
-.location .details{
-    background-color: #fff;
-    margin-bottom: 8px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 5px;
+}
+
+.location .details {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #333;
+    text-align: center;
 }

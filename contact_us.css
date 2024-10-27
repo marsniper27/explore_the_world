@@ -35,26 +35,29 @@ nav a {
     font-weight: bold;
 }
 
-
-/* Basic CSS for the form elements */
+html,
 body {
+    height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url("background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+body {
     display: flex;
     flex-direction: column;
 }
 
 #container {
+    flex: 1;
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: center; */
+    background-image: url("new-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 
 #container #sideBar {
     width: 10%;
@@ -63,10 +66,14 @@ body {
 }
 
 #container #content {
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
 }
 
 #container h1 {
@@ -74,7 +81,7 @@ body {
 }
 
 h1 {
-    color: white;
+    /* color: white; */
     margin-bottom: 20px;
 }
 
@@ -95,7 +102,7 @@ h2 {
 p {
     /* background-color: #000; */
     font-size: medium;
-    color: #ffffff;
+    /* color: #ffffff; */
     /* opacity: 1; */
 }
 
